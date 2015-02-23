@@ -1,0 +1,2 @@
+# BetterPvP
+The BetterPvP plugin
