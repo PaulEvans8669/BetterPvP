@@ -1,0 +1,7 @@
+name: BetterPvP
+main: me.amatokus8669.plugin.betterpvp.BetterPvP
+version: 1.2.0
+soft-depend: [Vault]
+commands:
+    honor:
+        description: Displayes your honor, or others honor.
