@@ -1,0 +1,49 @@
+enable:
+    experience:
+        onkill: true
+            #Set this to true to enable experience rewards.
+    money: true
+            #Set this to true to enable money rewards.
+    honor: true
+            #Set this to true to enable honor system.
+    items: true
+            #Set this to true to enable item rewards.
+
+
+                        #Available experience types are : add; remove.
+                        #Available experience types are : explevel; expbar.
+                        #Available money types are : add; remove.
+                        #/!\ If type expbar is used, the value of experience must be between 0 and 100. /!\
+                        #/!\ Decimal values can be used, but they must be separated by "." e.g. 5.5 . /!\
+                        #Available experience types are : brute; percent.
+
+onkill:
+    message: "&aWell done &c%Killer&a! You earned &c%Money $ &aand &c%Honor honor points&a, for killing &c%Killed&a! &cYou &aalso gained &c%Experience levels&a!"
+    money:
+    	form: percent
+        type: add
+        money: 10
+    experience:
+        type: add
+        option: explevel
+        experience: 1
+    honor:
+        type: add
+        honor: 1
+    items:
+        messages:
+            fullinventory: "&aI'm sorry for you &c%Killer&a, but you didn't recieved &c%Amount &aof &c%Item&a, because your inventory was full! Be ready next time!"
+            congratulations: "&aCongratulations &c%Killer&a! You recieved &c%Amount &alof &c%Item &afor killing %Killed!"
+        material: IRON_INGOT
+        amount: 1  
+            
+            
+   
+ondeath:
+    message: "&aBummer! &c%Killed &ayou lost &c%Money $ &aand &c%Honor honor points&a, because you were killed by &c%Killer!"
+    honor:
+        type: remove
+        honor: 1
+        
+        
+###################################################################GOOD FIGHT#########################################################################################################
